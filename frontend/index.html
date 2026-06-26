@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basketball Stats Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Basketball Stats Tracker</h1>
+
+    <p>
+      Track NBA players and their basic stats.
+    </p>
+
+    <div class="section-card">
+      <h2>Add a Player</h2>
+
+      <input id="nameInput" type="text" placeholder="Player name">
+      <input id="teamInput" type="text" placeholder="Team">
+      <input id="positionInput" type="text" placeholder="Position">
+
+      <input id="pointsInput" type="number" step="0.1" placeholder="Points">
+      <input id="reboundsInput" type="number" step="0.1" placeholder="Rebounds">
+      <input id="assistsInput" type="number" step="0.1" placeholder="Assists">
+
+      <input id="stealsInput" type="number" step="0.1" placeholder="Steals">
+      <input id="blocksInput" type="number" step="0.1" placeholder="Blocks">
+      <input id="fgInput" type="number" step="0.1" placeholder="FG%">
+
+      <button id="addPlayerButton">Add Player</button>
+      <p id="message" class="message"></p>
+    </div>
+
+    <div class="section-card">
+      <h2>Players</h2>
+
+      <button id="loadPlayersButton">Load Players</button>
+
+      <input id="searchInput" type="text" placeholder="Search by name or team">
+
+      <p id="playerCount">Total players: 0</p>
+
+      <div id="playersList"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
